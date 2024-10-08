@@ -1,11 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
-
-import Tasklist from "./pages/tasklist";
+import Login from "./pages/loginScreen";
+import Dashboard from "./pages/dashboard";
 
 const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <Tasklist />,
+		element: <Login />,
+	},
+	{
+		path: "/dashboard",
+		element: <Dashboard />,
 	},
 ]);
 
